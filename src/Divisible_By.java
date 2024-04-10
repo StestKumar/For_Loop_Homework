@@ -5,17 +5,11 @@ import java.util.Scanner;
 public class Divisible_By {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter any number between 1 - 100 = ");
-        int Number = scanner.nextInt();
+        int Number;
 
-        int x = Number%3;
-        int y = Number%5;
-        char Modulus = '%';
+        for (Number = 1; Number <= 100; Number++)
+            if (Number % 3 == 0 || Number % 5 == 0)
+                System.out.println(Number);
 
-        for (Number=1; x <= 0; Number++){
-            System.out.println("Number entered is divisible by 3");
-        }
     }
 }
-
